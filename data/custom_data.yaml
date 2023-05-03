@@ -1,0 +1,19 @@
+# COCO 2017 dataset http://cocodataset.org
+
+# download command/URL (optional)
+download: bash ./scripts/get_coco.sh
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path:   # dataset root dir
+train: /mnt/batch/tasks/shared/LS_root/mounts/clusters/sos-forest/code/Users/josephine.picot/yolov5/Users/josephine.picot/yolov5/Real_and_Synth_training_datasets/images/train  # train images (relative to 'path') 128 images
+val: /mnt/batch/tasks/shared/LS_root/mounts/clusters/sos-forest/code/Users/josephine.picot/yolov5/Users/josephine.picot/yolov5/Real_and_Synth_training_datasets/images/val  # val images (relative to 'path') 128 images
+test:  /mnt/batch/tasks/shared/LS_root/mounts/clusters/sos-forest/code/Users/josephine.picot/yolov5/Users/josephine.picot/yolov5/Real_and_Synth_training_datasets/images/test # test images (optional)
+
+
+# Classes
+nc: 1  # number of classes
+names: ['f']  # class names
+
+
+# # Download script/URL (optional)
+# download: https://ultralytics.com/assets/coco128.zip
